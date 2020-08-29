@@ -1,0 +1,79 @@
+.form {
+    padding: 62px 0 79px 0;
+    background: url('../img/form/form-bg.jpg') center center/cover no-repeat;
+    &__questions {
+        width: 896px;
+        height: 68px;
+        background-color: #25333c;
+        margin: 0 auto;
+        padding-top: 16px;
+    }
+    &__title {
+        margin: 0;
+        font-size: 19px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
+    }
+    &__wrapper {
+        width: 896px;
+        background-color:rgba(255,255,255,0.7);
+        padding: 17px 0 25px 0;
+        margin: 0 auto;
+    }
+    &__form {
+        width: 815px;
+        margin: 0 auto;
+    }
+    &__input {
+        padding: 0 28px;
+        width: 269px;
+        height: 47px;
+        background-color: #ffffff;
+        opacity: unset;
+        border: 1px solid rgba(0,0,0,0.4);
+        border-radius: 23px;
+        &:focus {
+            outline: none;
+            border: 1px solid #000000;
+            border-radius: 23px;
+        }
+
+
+    }
+    &__textarea {
+        padding: 19px 26px 0 26px;
+        margin-top: 6px;
+        display: block;
+        width: 100%;
+        height: 73px;
+        background-color: #ffffff;
+        border: 1px solid rgba(0,0,0,0.4);
+        border-radius: 10px;
+        resize: none;
+        &:focus {
+            outline: none;
+            border: 1px solid #000000;
+            border-radius: 10px;
+        }
+    }
+    &__btn {
+        @include style_for_btn;
+        display: block;
+        margin: 16px auto 0 auto;
+        width: 180px;
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}

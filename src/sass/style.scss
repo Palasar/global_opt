@@ -1,0 +1,25 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    opacity: .99;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+
+@import 'base/variables';
+@import 'base/mixin';
+@import 'blocks/header/header';
+@import 'blocks/advantages/advantages';
+@import 'blocks/more_delivery/more_then_delivery';
+@import 'blocks/agent_in_china/agent_in_china';
+@import 'blocks/price/price';
+@import 'blocks/consultations/consultations';
+@import 'blocks/manageres/managers';
+@import 'blocks/work_schemes/work_shemes';
+@import 'blocks/feedback/feedback';
+@import 'blocks/form/form';
+@import 'blocks/map/map';
+@import 'blocks/footer/footer';

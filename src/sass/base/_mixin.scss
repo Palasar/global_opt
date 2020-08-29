@@ -1,0 +1,43 @@
+@mixin style_for_h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 26px;
+    line-height: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    text-align: center;
+    
+}
+
+@mixin style_for_btn {
+    padding: 0;
+    width: 160px;
+    height: 45px;
+    background-color: $base-color;
+    border-radius: 23px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 23px;
+            border: 2px solid #000000;
+          }
+    }
+}
+
+@mixin style_for_divider {
+    width: 148px;
+    height: 1px;
+    background-color: $base-color;
+    margin: 20px auto 0 auto;
+}

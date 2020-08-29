@@ -1,0 +1,78 @@
+.price {
+    padding-top: 53px;
+    &__title {
+        @include style_for_h2;
+    }
+    &__divider {
+        @include style_for_divider;
+    }
+    &__subtitle {
+        margin-top: 27px;
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #2e2e2e;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 34px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 267px);
+        column-gap: 24px;
+    }
+    &__item {
+        border: 1px solid #e9e9e9;
+        padding-bottom: 26px;
+        &_title {
+            height: 61px;
+            font-size: 16px;
+            line-height: 61px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #25333c;
+            text-align: center;
+        }
+        &_img {
+            margin-top: 14px;
+            min-height: 58px;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &_textUp {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 23px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #2e2e2e;
+            text-align: center;
+        }
+        &_value {
+            font-size: 28px;
+            line-height: 30px;
+            text-transform: none;
+            color: $base-color;
+            text-align: center;
+        }
+        &_textLow {
+            margin-top: 19px;
+            padding: 0 22px 0 22px;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #2e2e2e;
+            text-align: center;
+        }
+        &_btn {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            margin-top: 25px;
+            color: #ffffff;
+            @include style_for_btn;
+        }
+    }
+}

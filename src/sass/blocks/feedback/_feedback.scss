@@ -1,0 +1,46 @@
+.feedback {
+    padding: 51px 0 65px;
+    &__title {
+        @include style_for_h2;
+    }
+    &__divider {
+        @include style_for_divider;
+    }
+    &__subtitle {
+        margin-top: 17px;
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #2e2e2e;
+        text-align: center;
+    }
+    &__slider {
+        margin: 31px auto 0 auto;
+        width: 603px;
+        &_img {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &_title {
+            margin-top: 19px;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            color: #3a3a3a;
+            text-align: center;
+        }
+        &_text {
+            margin-top: 14px;
+            font-size: 14.1px;
+            font-weight: 300;
+            text-align: justify;
+            line-height: 18px;
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}

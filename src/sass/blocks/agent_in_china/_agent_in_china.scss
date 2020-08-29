@@ -1,0 +1,35 @@
+.agentChina {
+    padding-top: 79px;
+    min-height: 342px;
+    background: url('../img/agent-in-china/agent-in-china.jpg') center center/ cover no-repeat;
+    &__icon {
+        position: relative;
+        width: 102px;
+        height: 102px;
+        margin: 0 auto;
+        border: 1px solid #ffffff;
+        border-radius: 100%;;
+        img {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__title {
+        @include style_for_h2;
+        color: #fff;
+        margin: 0;
+        margin-top: 20px;
+    }
+    &__subtitle {
+        margin-top: 22px;
+        padding: 0 75px 0 75px;
+        font-size: 19px;
+        line-height: 27px;
+        font-weight: 300;
+        color: #ffffff;
+        text-align: center;
+    }
+}

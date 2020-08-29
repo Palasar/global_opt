@@ -1,0 +1,52 @@
+.footer {
+    padding-top: 24px;
+    height: 201px;
+    background-color: #25333c;
+    &__wrapper {
+        padding-bottom: 26px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+    &__img {
+        width: 520px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__globalopt {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    &__contacts {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__questions {
+        margin-right: 19px;
+        &_text {
+            font-size: 14px;
+            font-weight: 300;
+            color: #ffffff;
+            text-align: right;
+        }
+        &_phone {
+            a {
+                font-size: 19px;
+                font-weight: 700;
+                color: #ffffff;
+                text-align: right;
+            }
+        }
+    }
+    &__btn {
+        @include style_for_btn;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}
